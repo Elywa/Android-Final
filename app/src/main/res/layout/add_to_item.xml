@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="wrap_content"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="@dimen/_180sdp"
+    android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/mealNameTextView"
+            style="@style/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breakfast"
+            android:textColor="@color/orange"
+
+            app:layout_constraintBottom_toBottomOf="@+id/plusMealImage"
+            app:layout_constraintEnd_toStartOf="@+id/plusMealImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/plusMealImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/plusMealImage"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+
+            android:elevation="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            style="@style/Animation.Design.BottomSheetDialog"
+            android:src="@drawable/ic_baseline_insert_emoticon_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Food Planner</string>
+    <string name="splash_content">solution for your meal problems</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="transition_name">transitionName</string>
+    <string name="schedule">schedule</string>
+    <string name="you_need_to_be_authenticated">please login First</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hello">"HELLO"</string>
+    <string name="forget_password">forget Password ?</string>
+    <string name="or">or</string>
+    <string name="type">type</string>
+    <string name="search">search</string>
+    <string name="meal">meal</string>
+    <string name="meals">meals</string>
+    <string name="date">date</string>
+    <string name="login_as_guest">Login as guest ?</string>
+    <string name="welcome_our_guest">welcome our guest</string>
+    <string name="email">email</string>
+    <string name="sign_in_with_google">Sign in With Google</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up_with_google">Sign up with google</string>
+    <string name="skip"><u>skip</u></string>
+    <string name="you_need_internet_to_login_as_guest">you need internet to login as guest</string>
+    <string name="welcome">"welcome "</string>
+    <string name="let_s_get_started">let\'s get started</string>
+    <string name="presenter">presenter</string>
+    <string name="breakfast">breakfast</string>
+    <string name="guest">guest</string>
+    <string name="meal_added_successfully">meal added successfully</string>
+    <string name="launch">launch</string>
+    <string name="dinner">dinner</string>
+    <string name="ingredient">ingredient</string>
+    <string name="category">category</string>
+    <string name="country">country</string>
+    <string name="web_id">804616878889-a5f90e5ou1j7j2dpa7ti1n2r7ilt8tg9.apps.googleusercontent.com</string>
+    <string name="users">users</string>
+    <string name="favourites">favourites</string>
+    <string name="please_insert_valid_email">please insert valid email</string>
+    <string name="your_password_should_have_number_capital_letter_small_letter_and_special_character">your password should have number, capital letter , small letter and special character</string>
+    <string name="food_planner">Wellcome to Food Planner</string>
+    <string name="blank_fragment">blank_fragment</string>
+    <string name="your_favourite_dish">your_favourite_dish</string>
+    <string name="choose_your_meal">choose_your_meal</string>
+    <string name="dish_of_the_day">dish_of_the_day</string>
+    <string name="logout">logout</string>
+    <string name="description">Description</string>
+    <string name="instructions_header">Instructions</string>
+    <string name="ingredients">Description</string>
+    <string name="Ingredients">Ingredients</string>
+    <string name="add">add</string>
+    <string name="details">details</string>
+    <string name="searchword">searchWord</string>
+    <string name="searchtype">searchType</string>
+    <string name="good_morning">"Good morning "</string>
+    <string name="delete">delete</string>
+    <string name="filters">Filters</string>
+    <string name="select_country">select Country</string>
+    <string name="meal_is_deleted_successfully">meal is deleted Successfully</string>
+    <string name="select_ingredient">select Ingredient</string>
+    <string name="select_category">select Category</string>
+    <string name="results">results</string>
+
+
+    <string-array name="flag_urls">
+        <item>https://www.worldometers.info/img/flags/us-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/uk-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ca-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ch-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/hr-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/hr-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/nl-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/eg-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/fr-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/gr-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/in-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ei-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/it-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/jm-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ja-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/th-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ke-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/my-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/mx-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/mo-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/pl-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/po-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/rs-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/sp-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/th-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/ts-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/tu-flag.gif</item>
+        <item>https://www.worldometers.info/img/flags/vm-flag.gif</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#FA4A0C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#F1F1F1</color>
+    <color name="gray10">#757575</color>
+    <color name="gray20">#797979</color>
+    <color name="gray30">#909090</color>
+    <color name="semiBlack">#414141</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#DFFF5C</color>
+    <color name="green">#6BEB39</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#ACACAC</color>
+
+</resources>

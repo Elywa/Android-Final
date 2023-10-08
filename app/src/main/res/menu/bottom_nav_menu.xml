@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/searchFragment" android:title="@string/search" android:icon="@drawable/ic_baseline_manage_search_24" />
+    <item android:id="@+id/scheduleFragment" android:title="@string/schedule" android:icon="@drawable/ic_baseline_calendar_month_24" />
+    <item android:id="@+id/mealsFragment" android:title="@string/meals" android:icon="@drawable/meals" />
+    <item android:id="@+id/favouriteMealFragment" android:title="@string/favourites" android:icon="@drawable/ic_baseline_favorite_24" />
+    <item android:id="@+id/loginFragment" android:title="@string/logout" android:icon="@drawable/logout" />
+
+</menu>

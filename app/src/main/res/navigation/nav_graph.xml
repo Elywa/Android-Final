@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <action
+        android:id="@+id/action_to_addDialogFragment"
+        app:destination="@id/addDialogFragment" />
+
+    <action
+        android:id="@+id/action_to_mealDetailsFragment"
+        app:destination="@id/mealDetailsFragment" />
+
+    <action
+        android:id="@+id/action_to_datePickerFragment"
+        app:destination="@id/datePickerFragment" />
+
+    <action
+        android:id="@+id/action_to_loginFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/loginFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/loginFragment" />
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.androidproject.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"
+            app:destination="@id/loginFragment" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/addDialogFragment"
+        android:name="com.example.androidproject.meals.mainmealsfragment.view.AddDialogFragment"
+        android:label="fragment_add_dialog"
+        tools:layout="@layout/fragment_add_dialog" >
+        <argument
+            android:name="meal"
+            app:argType="com.example.androidproject.data.dto.Meal" />
+    </dialog>
+    <fragment
+        android:id="@+id/mealsFragment"
+        android:name="com.example.androidproject.meals.mainmealsfragment.view.MealsFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_meals" >
+        <action
+            android:id="@+id/action_mealsFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+
+
+        android:name="com.example.androidproject.authentication.login.view.LoginFragment"
+        android:label="fragment_login"
+
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mealsFragment2"
+            app:destination="@id/mealsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.androidproject.authentication.signup.view.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up"
+
+        >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_mealsFragment2"
+            app:destination="@id/mealsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealsFragment2"
+        android:name="com.example.androidproject.meals.mainmealsfragment.view.MealsFragment"
+        android:label="fragment_meals"
+        tools:layout="@layout/fragment_meals" >
+        <action
+            android:id="@+id/action_mealsFragment2_to_mealDetailsFragment"
+            app:destination="@id/mealDetailsFragment" />
+        <action
+            android:id="@+id/action_mealsFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="com.example.androidproject.meals.mainmealsfragment.view.DatePickerFragment"
+        android:label="fragment_date_picker"
+        tools:layout="@layout/fragment_date_picker" >
+        <argument
+            android:name="meal"
+            app:argType="com.example.androidproject.data.dto.Meal" />
+    </dialog>
+    <fragment
+        android:id="@+id/mealDetailsFragment"
+        android:name="com.example.androidproject.meals.detailsfragment.view.MealDetailsFragment"
+        android:label="MealDetailsFragment"
+        tools:layout="@layout/fragment_meal_details"
+        >
+        <argument
+            android:name="transitionName"
+            app:argType="string" />
+        <argument
+            android:name="meal"
+            app:argType="com.example.androidproject.data.dto.Meal"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.androidproject.meals.search.selection_search.view.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.example.androidproject.meals.search.search_result.view.SearchResultsFragment"
+        android:label="SearchResultsFragment"
+        tools:layout="@layout/fragment_search_results"
+        >
+    <argument
+        android:name="searchWord"
+        app:argType="string" />
+    <argument
+        android:name="searchType"
+        app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.androidproject.meals.schedule.view.ScheduleFragment"
+        android:label="ScheduleFragment"
+        tools:layout="@layout/fragment_schedule"
+        >
+        <action
+            android:id="@+id/action_scheduleFragment_to_mealDetailsFragment"
+            app:destination="@id/mealDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteMealFragment"
+        android:name="com.example.androidproject.meals.favourites.view.FavouriteMealFragment"
+        android:label="FavouriteMealFragment"
+        tools:layout="@layout/fragment_favourite_meal">
+
+    <action
+        android:id="@+id/action_FavouriteFragment_to_mealDetailsFragment"
+        app:destination="@id/mealDetailsFragment" />
+</fragment>
+</navigation>

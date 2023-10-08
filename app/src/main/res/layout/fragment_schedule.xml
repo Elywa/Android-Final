@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".schedule.view.ScheduleFragment"
+
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraint"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vGuideline97.5percent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.975" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vGuideline2.5percent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.025" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/daysRecycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toStartOf="@+id/vGuideline97.5percent"
+            app:layout_constraintStart_toStartOf="@+id/vGuideline2.5percent"
+            app:layout_constraintTop_toBottomOf="@+id/vGuideline2.5percent"
+            tools:listitem="@layout/day_item" />
+
+
+        <TextView
+            android:id="@+id/breakFastTextView"
+            style="@style/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/breakfast"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/vGuideline2.5percent"
+            app:layout_constraintTop_toBottomOf="@+id/launchRecycler" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/breakFastRecycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toStartOf="@+id/vGuideline97.5percent"
+            app:layout_constraintStart_toStartOf="@+id/vGuideline2.5percent"
+            app:layout_constraintTop_toBottomOf="@+id/breakFastTextView"
+            tools:listitem="@layout/meal_calendar_item" />
+
+
+        <TextView
+            android:id="@+id/launchTextView"
+            style="@style/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/launch"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/vGuideline2.5percent"
+            app:layout_constraintTop_toBottomOf="@+id/daysRecycler" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/launchRecycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toStartOf="@+id/vGuideline97.5percent"
+            app:layout_constraintStart_toStartOf="@+id/vGuideline2.5percent"
+            app:layout_constraintTop_toBottomOf="@+id/launchTextView"
+            tools:listitem="@layout/meal_calendar_item" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/dinnerTextView"
+            style="@style/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/dinner"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/vGuideline2.5percent"
+            app:layout_constraintTop_toBottomOf="@+id/breakFastRecycler" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dinnerRecycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toStartOf="@+id/vGuideline97.5percent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vGuideline2.5percent"
+            app:layout_constraintTop_toBottomOf="@+id/dinnerTextView"
+            tools:listitem="@layout/meal_calendar_item" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

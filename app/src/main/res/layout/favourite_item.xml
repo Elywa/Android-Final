@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_150sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@color/white"
+    app:strokeColor="@color/white">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemCardView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/mealNameTextView"
+                style="@style/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:maxWidth="@dimen/_75sdp"
+                android:maxLines="2"
+                android:text="Scrambeld "
+                android:textAlignment="center"
+                android:textColor="@color/semiBlack"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/ingredientsTextView"
+                app:layout_constraintEnd_toEndOf="@+id/cardImageView"
+                app:layout_constraintStart_toStartOf="@+id/cardImageView"
+                app:layout_constraintTop_toBottomOf="@+id/cardImageView" />
+
+
+            <TextView
+                android:id="@+id/ingredientsTextView"
+                style="@style/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:maxWidth="@dimen/_75sdp"
+                android:maxLines="2"
+                android:text="beef ,egg ,salad ,rice "
+                android:textAlignment="center"
+                android:textColor="@color/gray10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mealNameTextView"
+                app:layout_constraintStart_toStartOf="@+id/mealNameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/mealNameTextView" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_2sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+            <ImageView
+                android:id="@+id/mealImage"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:elevation="10dp"
+                android:src="@drawable/icon"
+               />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

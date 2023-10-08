@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".meals.mainmealsfragment.view.AddDialogFragment"
+    android:background="@color/gray30"
+    android:theme="@style/MyDialog"
+    >
+
+    <include
+        android:id="@+id/addToBreakfast"
+        layout="@layout/add_to_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/addToLaunch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <include
+        android:id="@+id/addToLaunch"
+        layout="@layout/add_to_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/addToDinner"
+        app:layout_constraintEnd_toEndOf="@+id/addToBreakfast"
+        app:layout_constraintStart_toStartOf="@+id/addToBreakfast"
+        app:layout_constraintTop_toBottomOf="@+id/addToBreakfast" />
+
+    <include
+        android:id="@+id/addToDinner"
+        layout="@layout/add_to_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/addToFavourites"
+        app:layout_constraintEnd_toEndOf="@+id/addToLaunch"
+        app:layout_constraintStart_toStartOf="@+id/addToLaunch"
+        app:layout_constraintTop_toBottomOf="@+id/addToLaunch" />
+
+    <include
+        android:id="@+id/addToFavourites"
+        layout="@layout/add_to_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/addToDinner"
+        app:layout_constraintStart_toStartOf="@+id/addToDinner"
+        app:layout_constraintTop_toBottomOf="@+id/addToDinner" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
